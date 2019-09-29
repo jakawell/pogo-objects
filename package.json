@@ -1,0 +1,40 @@
+{
+  "name": "pogo-objects",
+  "version": "1.0.0",
+  "description": "TypeScript (and JavaScript) objects for Pokémon GO fan development",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "tslint -p .",
+    "test": "jest tests",
+    "build": "rm -rf dist/ && tsc",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint && npm test"
+    }
+  },
+  "keywords": [
+    "pokemon",
+    "pokemon-go"
+  ],
+  "author": "Jesse Kawell",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakawell/pogo-objects.git"
+  },
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.8",
+    "husky": "^3.0.7",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  }
+}
