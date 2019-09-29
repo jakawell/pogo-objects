@@ -1,6 +1,6 @@
 {
   "name": "pogo-objects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScript (and JavaScript) objects for Pokémon GO fan development",
   "main": "dist/index.js",
   "scripts": {
